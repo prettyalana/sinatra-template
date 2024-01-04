@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fredericka+the+Great&family=Italiana&family=Just+Another+Hand&family=Syncopate&family=Thasadith&display=swap');
+
+* {
+  /* font-family: 'Fredericka the Great', serif; */
+  font-family: 'Zen Maru Gothic', sans-serif; 
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  /* background-image: url(https://images.unsplash.com/photo-1604367159764-ec2789900c7c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+  /* background-size: fill; */
+  /* background-image: url(https://helios-i.mashable.com/imagery/articles/07lXzNZveBNLs8eiA2cS9K7/hero-image.fill.size_1248x702.v1619019592.png);
+  background-size: cover; */
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: hidden;
+}
+
+@media (max-width: 430px){
+  body {
+    width: 100%;
+  }
+
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  flex: 1;
+}
+
+.nav-bar {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.logo {
+  gap: 5px;
+  /* border: 1px solid hotpink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 2.5rem;
+  width: 2.5rem;
+  /* border: 1px solid rgb(57, 5, 246); */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+  gap: 1rem;
+  /* border: 1px solid blue; */
+}
+
+
+.main-title {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.quotes {
+  padding: 16px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 5px solid blue; */
+}
+
+/* .static-quote {
+  border: 1px solid red;
+} */
+
+.random-quotes {
+  margin-top: .625rem;
+  margin-bottom: .625rem;
+}
+
+.html-form {
+  margin-top: 80px;
+  display: flex;
+}
+
+@media (max-width: 470px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+input {
+  /* display: flex;
+  justify-content: center; */
+  border: 1px solid gray;
+  /* border-radius: 100px; */
+}
+
+button {
+    color: #f9faf8;
+    height: 20px;
+    width: 50px;
+    border-radius: 20px;
+    /* padding: 16px; */
+    font-family: 'Grandiflora One', serif;  
+    /* text-align: center; */
+    border: none;
+}
+
+#search:hover {
+  border: 1px solid #f9faf8;
+  /* background: pink; */
+  box-shadow: #f9faf8;
+}
+
+
+.google-maps {
+  background: pink;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  flex: 0 1 auto;
+}
+
+@media (max-width: 280px) {
+  footer {
+    /* width: 100%; */
+    width: 100%;
+    font-size: x-small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+
+#location-form {
+  display: flex;
+}

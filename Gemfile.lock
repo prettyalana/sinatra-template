@@ -51,6 +51,9 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     faraday-retry (1.0.3)
+    geocoder (1.8.2)
+    google_places (2.0.0)
+      httparty (>= 0.13.1)
     grade_runner (0.0.9)
       activesupport (>= 2.3.5)
       faraday-retry (~> 1.0.3)
@@ -58,6 +61,9 @@ GEM
       oj (~> 3.13.12)
       rake (~> 13)
     hashdiff (1.0.1)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     matrix (0.4.2)
@@ -65,6 +71,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.18.1)
     multi_json (1.15.0)
+    multi_xml (0.6.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.9)
@@ -163,6 +170,8 @@ DEPENDENCIES
   binding_of_caller
   capybara
   draft_matchers
+  geocoder
+  google_places
   grade_runner
   i18n
   pry

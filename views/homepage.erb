@@ -1,0 +1,37 @@
+<div class="nav-bar">
+  <div class="logo">
+    <a href="/<%=@search_location%>"><img src="assets/home.png" alt="home with a heart"></a>Home is Community
+  </div>
+  <div class="icons">
+      <!--<a href="/<%#=@search_location%>"><i class="fa-solid fa-house fa-bounce"></i></a>-->
+      <i class="fa-solid fa-hand-holding-heart fa-bounce"></i>
+      <i class="fa-solid fa-heart fa-bounce"></i>
+      <!--<i class="fa-solid fa-earth-americas fa-bounce"></i>-->
+      <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+      <i class="fa-solid fa-bars fa-bounce"></i>
+  </div>
+</div>
+<hr class="solid">
+<div class="main-content">
+  <div class="main-title"><h1>Homeless Resource Index</h1>
+  <div class="quotes"><q class= "static-quote">Home is about love, relationship, community, and belonging, and we are all searching for home. — Erwin Raphael McManus</q>
+  <q class= "random-quotes"><%=@inspirational_quotes%></q>
+  </div>
+  </div>
+  <div class="html-form">
+  <form action="/:search">
+  <label for="search">Search resources near you</label>
+  <input type="text" name="search-locations" id="search" placeholder="city or zip code" value="<%=@search_locations%>">
+  <button id="search">Search</button>
+  </form>
+  </div>
+</div>
+<div class="card-container">
+<div id="card_one"></div>
+<div id="card_two"></div>
+<div id="card_three"></div>
+<div id="card_four"></div>
+</div>
+<div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d47539.60925405411!2d-87.65908565678373!3d41.86649287736951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shomeless%20resources%20near%20me!5e0!3m2!1sen!2sus!4v1704142727277!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<hr class=solid>
+<div class="footer"><footer><a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icon created by Freepik - Flaticon</a></footer></div>

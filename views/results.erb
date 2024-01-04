@@ -1,0 +1,26 @@
+<h1>Resources near <%=@search_location%></h1>
+
+<h1>Here are your suggestions based on <%=@search_resource%></h1>
+<pre>
+<%#=JSON.pretty_generate(@results)%>
+<%#=JSON.pretty_generate(@parsed_data)%>
+</pre>
+
+<table> 
+<thead>
+  <tr>
+    <th>Name</th> 
+    <th>Rating</th>
+  </tr>
+</thead>
+<tbody>
+
+<%@results.each do |result|%>
+<tr>
+<td><%=result.fetch("name")%></td>
+<td><%=result.fetch("rating")%></td>
+</tr>
+
+<% end %>
+</tbody>
+</table>
