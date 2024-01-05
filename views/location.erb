@@ -1,6 +1,7 @@
-<h1>Search for resources near <%=@search_location%></h1>
+<!--<link rel="stylesheet" href="location.css">-->
+<script src="https://kit.fontawesome.com/ab9c75fe83.js" crossorigin="anonymous"></script>
 
-<!--<a href="/"><i class="fa-solid fa-house fa-bounce"></i></a>-->
+<h1>Search for resources near <%=@search_location%></h1>
 
 <form action="/:search_results/:search_results" id="location_form">
 <label for="user_location">Search resources near you</label>
@@ -10,3 +11,5 @@
 <input type="hidden" name="longitude" value="<%=@longitude%>">
 <button>Search</button>
 </form>
+
+<!--<div class="home-button"><a href="/"><i class="fa-solid fa-house fa-bounce"></i></a></div>-->

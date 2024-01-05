@@ -11,7 +11,7 @@
       <i class="fa-solid fa-bars fa-bounce"></i>
   </div>
 </div>
-<hr class="solid">
+<!--<hr class="solid">-->
 <div class="main-content">
   <div class="main-title"><h1>Homeless Resource Index</h1>
   <div class="quotes"><q class= "static-quote">Home is about love, relationship, community, and belonging, and we are all searching for home. — Erwin Raphael McManus</q>
@@ -22,16 +22,30 @@
   <form action="/:search">
   <label for="search">Search resources near you</label>
   <input type="text" name="search-locations" id="search" placeholder="city or zip code" value="<%=@search_locations%>">
-  <button id="search">Search</button>
+  <button class="search-btn">Search</button>
   </form>
   </div>
 </div>
+<div class="card-links"> 
+<div class="card-header"><h1>Ways you can help!</h1></div>
 <div class="card-container">
-<div id="card_one"></div>
-<div id="card_two"></div>
-<div id="card_three"></div>
-<div id="card_four"></div>
+<div class="card"><img src="https://img.freepik.com/free-photo/be-strong-be-fearless-be-you_23-2148800975.jpg?w=900&t=st=1704413139~exp=1704413739~hmac=377404f9c797427f59767692b796a1673ea29ed6b253c7ce8b50c4591743404b" alt="public bench in the park with sunlight"></div>
+<div class="card"><img src="https://images.pexels.com/photos/22221/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="choose joy"></div>
+<div class="card"><img src="https://img.freepik.com/free-photo/we-can-it-quote-with-beads_53876-101474.jpg?w=900&t=st=1704412734~exp=1704413334~hmac=5ff2bca5f579afda51517aa684bd68655ef16c31de0365b1cc8f7fedf205aef5" alt=""></div>
+<div class="card"><img src="https://images.pexels.com/photos/669988/pexels-photo-669988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
 </div>
-<div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d47539.60925405411!2d-87.65908565678373!3d41.86649287736951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shomeless%20resources%20near%20me!5e0!3m2!1sen!2sus!4v1704142727277!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-<hr class=solid>
+</div>
+<div class="google-maps">
+<iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/search?key=<%=ENV.fetch("GOOGLE_API_KEY")%>
+    &q=homeless+resources+food+pantries+housing+assistance,everywhere">
+</iframe>
+<!--<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d47539.60925405411!2d-87.65908565678373!3d41.86649287736951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shomeless%20resources%20near%20me!5e0!3m2!1sen!2sus!4v1704142727277!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--></div>
+<!--<hr class=solid>-->
 <div class="footer"><footer><a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icon created by Freepik - Flaticon</a></footer></div>

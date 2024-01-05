@@ -43,6 +43,7 @@ body {
   padding-top: 10rem;
   padding-bottom: 10rem;
   flex: 1;
+  background: pink;
 }
 
 .nav-bar {
@@ -100,10 +101,21 @@ img {
 
 .html-form {
   margin-top: 80px;
-  display: flex;
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* border: 5px solid blue; */
 }
 
-@media (max-width: 470px) {
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 570px) {
   form {
     display: flex;
     flex-direction: column;
@@ -111,34 +123,69 @@ img {
   }
 }
 
+/* label {
+  padding: 16px;
+} */
+
 input {
-  /* display: flex;
-  justify-content: center; */
-  border: 1px solid gray;
-  /* border-radius: 100px; */
+  border: 1px solid pink;
+  border-radius: 100px;
+  padding: 16px;
 }
 
-button {
-    color: #f9faf8;
-    height: 20px;
-    width: 50px;
-    border-radius: 20px;
-    /* padding: 16px; */
-    font-family: 'Grandiflora One', serif;  
-    /* text-align: center; */
-    border: none;
+.search-btn {
+  background: pink;
+  border: 1px solid white;
+  height: 45px;
+  width: 70px;
+  border-radius: 10px;
+  /* padding: 16px; */
+  display: flex;
+  justify-content: center;  
+  align-items: center;
 }
 
-#search:hover {
-  border: 1px solid #f9faf8;
-  /* background: pink; */
-  box-shadow: #f9faf8;
+button:hover {
+background: white;
+border: 1px solid pink;
 }
 
+.card-links {
+  height: 600px;
+  /* border: 5px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.card-header {
+  /* border: 2px solid green; */
+  text-align: center;
+  /* margin-top: 50px; */
+  margin-bottom: 50px;
+ }
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* margin-top: 145px; */
+  /* border: 2px solid red; */
+}
+
+.card img {
+  border: 4px solid pink;
+  border-radius: 20px;
+  height: 200px;
+  width: 200px;
+}
 
 .google-maps {
   background: pink;
-  height: 50%;
+  height: 70%;
   display: flex;
   justify-content: center;
 }
