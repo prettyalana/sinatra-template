@@ -15,10 +15,6 @@
 }
 
 body {
-  /* background-image: url(https://images.unsplash.com/photo-1604367159764-ec2789900c7c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
-  /* background-size: fill; */
-  /* background-image: url(https://helios-i.mashable.com/imagery/articles/07lXzNZveBNLs8eiA2cS9K7/hero-image.fill.size_1248x702.v1619019592.png);
-  background-size: cover; */
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -148,6 +144,7 @@ input {
 button:hover {
 background: white;
 border: 1px solid pink;
+box-shadow: 0 0 10px white;
 }
 
 .card-links {

@@ -66,8 +66,6 @@ get("/:search/:search_results") do
   @results = @parsed_data.fetch("results").map{ |result| result.slice("name", "opening_hours", "photos", "rating") }
 
   erb(:results , {:layout => false })
-
-  # @opening_hours = @results[0]["opening_hours"]["open_now"]
 end
 
 # get("/additional_resources") do

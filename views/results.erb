@@ -19,11 +19,24 @@
 <%@results.each do |result|%>
 <tr>
 <td><%=result.fetch("name")%></td>
-<td><%=result.fetch("rating")%></td>
-<!--<td><%#=@results[0]["opening_hours"]["open_now"]%> 
-</td>-->
-</tr>
+<td><% if result.fetch("rating") == 0%>
+<%="We couldn't find any reviews"%>
+<%else%>
+<%=result.fetch("rating")%>
+<%end%>
+</td>
 
 <% end %>
 </tbody>
 </table>
+
+<iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/search?key=<%=ENV.fetch("GOOGLE_API_KEY")%>
+    &q=<%=@search_resource%>+<%=@search_resource%>,<%=@search_location%>">
+</iframe>

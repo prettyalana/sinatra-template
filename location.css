@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400&display=swap');
 
 * {
   margin: 0;
@@ -6,9 +6,87 @@
 }
 
 body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+  font-family: 'Zen Maru Gothic', sans-serif; 
+  background: url("https://images.unsplash.com/photo-1604960855373-d9d686e32d17?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Zen Maru Gothic', sans-serif; 
+}
+
+.main-header {
+  text-align: center;
+  /* color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
+}
+
+.html-form {
+  margin-top: 80px;
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* border: 5px solid blue; */
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* label {
+  padding: 16px;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: white;
 } */
+
+input {
+  border: 1px solid powderblue;
+  border-radius: 100px;
+  padding: 16px;
+}
+
+button {
+  background: white;
+  border: 1px solid powderblue;
+  height: 45px;
+  width: 70px;
+  border-radius: 10px;
+  /* padding: 16px; */
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+button:hover {
+background: powderblue;
+border: 1px solid white;
+box-shadow: 0 0 10px powderblue;
+}
+
+@media (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
