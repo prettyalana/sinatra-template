@@ -40,6 +40,7 @@ GEM
       rexml
     debug_inspector (1.1.0)
     diff-lcs (1.5.0)
+    domain_name (0.6.20240107)
     draft_matchers (0.0.2)
       capybara
       color_namer
@@ -51,6 +52,10 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     faraday-retry (1.0.3)
+    ffi (1.16.3)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
     geocoder (1.8.2)
     google_places (2.0.0)
       httparty (>= 0.13.1)
@@ -61,11 +66,22 @@ GEM
       oj (~> 3.13.12)
       rake (~> 13)
     hashdiff (1.0.1)
+    http (5.1.1)
+      addressable (~> 2.8)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.2)
+      llhttp-ffi (~> 0.4.0)
+    http-cookie (1.0.5)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
     httparty (0.21.0)
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
+    llhttp-ffi (0.4.0)
+      ffi-compiler (~> 1.0)
+      rake (~> 13.0)
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.5)
@@ -173,6 +189,7 @@ DEPENDENCIES
   geocoder
   google_places
   grade_runner
+  http
   i18n
   pry
   puma (~> 5.0)

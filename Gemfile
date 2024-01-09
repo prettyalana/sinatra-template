@@ -7,6 +7,7 @@ gem "sinatra"
 gem "sinatra-contrib"
 gem "geocoder"
 gem "google_places"
+gem "http"
 
 # Use Puma as the app server
 gem "puma", "~> 5.0"
