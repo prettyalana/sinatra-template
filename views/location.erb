@@ -1,6 +1,11 @@
 <link rel="stylesheet" href="location.css">
 <script src="https://kit.fontawesome.com/ab9c75fe83.js" crossorigin="anonymous"></script>
 
+<div class="nav">
+  <div class="home-button"><a href="/">  <i class="fa-solid fa-house fa-bounce"></i></a>
+  </div>
+  <div class="menu"><i class="fa-solid fa-bars fa-bounce"></i></div>
+</div>
 <div class="main-content">
 <div class="main-header"><h1>Search for resources near <%=@search_location%></h1></div>
 <form action="/:search_results/:search_results" id="location_form">
@@ -11,7 +16,5 @@
 <input type="hidden" name="longitude" value="<%=@longitude%>">
 <button>Search</button>
 </form>
+<div class="back-btn">Search for another location <a href="/#search"><i class="fa-solid fa-rotate-left"></i></a></div>
 </div>
-
-
-<!--<div class="home-button"><a href="/"><i class="fa-solid fa-house fa-bounce"></i></a></div>-->

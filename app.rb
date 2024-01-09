@@ -15,7 +15,7 @@ require "sinatra/cookies"
 # Remember instance variable names need to match when fetching the params
 
 get("/") do
-  quotes = ["Encourage yourself, believe in yourself, and love yourself. Never doubt who you are. ― Stephanie Lahart, Overcoming Life's Obstacles: Enlighten-Encourage-Empower", " The sun himself is weak when he first rises, and gathers strength and courage as the day gets on. — Charles Dickens, The Old Curiosity Shop", "Coming together is a beginning. Keeping together is progress. Working together is success. — Henry Ford", "When your dreams are bigger than the places you find yourself in, sometimes you need to seek out your own reminders that there is more. And there is always more waiting for you on the other side of fear. — Elaine Welteroth, More Than Enough: Claiming Space for Who You Are", "Cultivate an optimistic mind, use your imagination, always consider alternatives, and dare to believe that you can make possible what others think is impossible. ― Rodolfo Costa, Advice My Parents Gave Me: and Other Lessons I Learned from My Mistakes"]
+  quotes = ["Encourage yourself, believe in yourself, and love yourself. Never doubt who you are. ― Stephanie Lahart, Overcoming Life's Obstacles: Enlighten-Encourage-Empower", "The sun himself is weak when he first rises, and gathers strength and courage as the day gets on. — Charles Dickens, The Old Curiosity Shop", "Coming together is a beginning. Keeping together is progress. Working together is success. — Henry Ford", "When your dreams are bigger than the places you find yourself in, sometimes you need to seek out your own reminders that there is more. And there is always more waiting for you on the other side of fear. — Elaine Welteroth, More Than Enough: Claiming Space for Who You Are", "Cultivate an optimistic mind, use your imagination, always consider alternatives, and dare to believe that you can make possible what others think is impossible. ― Rodolfo Costa, Advice My Parents Gave Me: and Other Lessons I Learned from My Mistakes"]
 
 @inspirational_quotes = quotes.sample
   erb(:homepage)
@@ -51,6 +51,7 @@ locator = geo.fetch("location")
 end
 
 get("/:search/:search_results") do
+  cookies["search_term"] = "homeless"
   api_key = ENV.fetch("GOOGLE_API_KEY")
   @search_location = params.fetch("search-locations")
   @search_resource = params.fetch("resource")
@@ -64,6 +65,29 @@ get("/:search/:search_results") do
   @parsed_data = JSON.parse(raw_data_string)
 
   @results = @parsed_data.fetch("results").map{ |result| result.slice("name", "opening_hours", "photos", "rating") }
+
+  # search_terms = "homeless", "homeless resources", "Homeless", "Homeless shelter", "Homeless shelters", "homeless shelters for women", "homeless shelters for women and children", "homeless shelters for men", "food pantries", "food pantry", "Food pantry"
+
+  # if @search_resource != search_terms[0]
+  #  return "Sorry, we're unable to find that resource."
+  # else
+  #   @results
+  # end
+
+  # search_terms = ["shopping", "flowers", "movies", "food"].each do |restrict|
+  #   if @search_resource == search_terms
+  #     return "Sorry, we're unable to find that resource."
+  #    else
+  #     return @results
+  #    end
+  # end 
+
+
+  #   <%if @search_resource != "homeless"%>
+# <%"Sorry, we're unable to find that resource."%>
+# <%else%>
+# <%=@search_resource%>
+# <%end%>
 
   erb(:results , {:layout => false })
 end
