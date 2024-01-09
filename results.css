@@ -12,7 +12,6 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Zen Maru Gothic', sans-serif;
-  /* width: 100vw; */
   min-height: 100vh;
   margin-left: 0;
   margin-right: 0;
@@ -22,26 +21,33 @@ a:visited {
   color: transparent;
 }
 
+#location-header {
+  margin-top: 20px;
+}
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
 }
 
 table {
-  /* border: 5px solid hotpink; */
   border: 5px solid black;
-  width: 100%
+  width: 100%;
+  height: 50vh;
 }
 
 th {
-  /* border: 2px solid red; */
   border: 1px solid black;
+  text-align: center;
 }
 
 
 td {
-  /* border: 2px solid green; */
   border: 1px solid black;
+}
+
+#td-rating {
+  text-align: center;
 }
 
 .map-container {
