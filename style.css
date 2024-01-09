@@ -162,6 +162,7 @@ box-shadow: 0 0 10px white;
   justify-content: center;
   align-items: center;
   /* gap: 20px; */
+  overflow-x: hidden;
 }
 
 .card-header {

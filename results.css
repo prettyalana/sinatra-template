@@ -12,6 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Zen Maru Gothic', sans-serif;
+  /* width: 100vw; */
+  min-height: 100vh;
 }
 
 a:visited {
