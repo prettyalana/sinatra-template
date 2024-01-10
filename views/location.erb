@@ -7,14 +7,20 @@
   <div class="menu"><i class="fa-solid fa-bars fa-bounce"></i></div>
 </div>-->
 <div class="main-content">
-<div class="main-header"><h1>Search for resources near <%=@search_location%></h1></div>
-<form action="/:search_results/:search_results" id="location_form">
-<label for="user_location">Search resources near you</label>
-<input type="hidden" name="search-locations" id="user_location"  value="<%=@search_location%>">
-<input type="text" name="resource" id="user_resource" placeholder="resources">
-<input type="hidden" name="latitude"   value="<%=@latitude%>">
-<input type="hidden" name="longitude" value="<%=@longitude%>">
-<button>Search</button>
-</form>
-<div class="back-btn">Search for a different location <a href="/#hri"><i class="fa-solid fa-rotate-left"></i></a></div>
+  <div class="home"><a href="/"><i class="fa-solid fa-xmark"></i></a>
+  </div>
+  <div class="middle-content">
+    <div class="main-header"><h1>Search for resources near <%=@search_location%></h1>
+    </div>
+    <form action="/:search_results/:search_results" id="location_form">
+    <label for="user_location">Search resources near you</label>
+    <input type="hidden" name="search-locations" id="user_location"  value="<%=@search_location%>">
+    <input type="text" name="resource" id="user_resource" placeholder="resources">
+    <input type="hidden" name="latitude"   value="<%=@latitude%>">
+    <input type="hidden" name="longitude" value="<%=@longitude%>">
+    <button>Search</button>
+    </form>
+  </div>
+  <div class="back-btn">Search for a different location <a href="/#hri"><i class="fa-solid fa-rotate-left"></i></a>
+  </div>
 </div>

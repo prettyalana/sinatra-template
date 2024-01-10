@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 5px solid red; */
+  /* border: 1px solid red; */
 }
 
 body {
@@ -37,7 +37,6 @@ h1 {
 }
 
 table {
-  border: 5px solid black;
   width: 100%;
   height: 100%;
 }
@@ -47,9 +46,13 @@ th {
   text-align: center;
 }
 
-
+table,
+thead,
+tr,
+th,
+tbody,
 td {
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 #td-rating {
@@ -61,7 +64,7 @@ td {
   /* margin-bottom: 0; */
   background: pink;
   width: 100%;
-  /* height: 100%; */
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
