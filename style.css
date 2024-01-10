@@ -179,6 +179,7 @@ box-shadow: 0 0 10px white;
   gap: 50px;
   /* border: 2px solid red; */
   margin-right: 25px;
+  margin-left: 5px;
 }
 
 .card .image {
