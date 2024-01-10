@@ -177,8 +177,8 @@ box-shadow: 0 0 10px white;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  /* margin-top: 145px; */
   /* border: 2px solid red; */
+  margin-right: 25px;
 }
 
 .card .image {
@@ -197,12 +197,15 @@ box-shadow: 0 0 10px white;
 @media (max-width: 1025px) {
 
   .card-container {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .card-container {
     gap: 40px;
   }
-
-  
-  
-
 }
   
 
