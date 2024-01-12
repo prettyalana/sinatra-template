@@ -6,7 +6,10 @@
   <%#=JSON.pretty_generate(@parsed_data)%>
 <!--</pre>-->
 
-<div class="top-content">
+<%if @search_terms.include?(@results_downcase)%>
+  <div class="top-content">
+  <div class="home"><a href="/"><i class="fa-solid fa-xmark"></i></a>
+  </div>
   <div class="location-resource-header">
     <h1 id="location-header">Resources near <%=@search_location%>
     </h1>
@@ -19,7 +22,7 @@
     <a href="/#hri"><i class="fa-solid fa-rotate-left"></i></a>
   </div>
 
-  <!--<div class="resource-btn"><a href="/:search/<%#=@search_results%>">Search for additional resources</a>
+<!--  <div class="resource-btn"><a href="/:search/<%#=@search_results%>">Search for additional resources</a>
   </div>-->
 
   <div class="results-table">
@@ -28,7 +31,6 @@
         <tr>
           <th>Name</th> 
           <th>Rating</th>
-          <!--<th>Open Now</th>-->
         </tr>
       </thead>
       <tbody>
@@ -49,9 +51,59 @@
     </table>
   </div>
 </div>
+  <%else%>
+  <div class="home"><a href="/"><i class="fa-solid fa-xmark"></i></a>
+  </div>
+  <div class="error-message"><h1>Sorry, we're unable to find that resource. Here's a map related to the search term "<%=@search_resource%>"</h1>
+  </div>
+  <div class="back-btn">Search for a different location <a href="/#hri"><i class="fa-solid fa-rotate-left"></i></a>
+  </div>
+ <%end%> 
+
+<!--<div class="top-content">
+  <div class="location-resource-header">
+    <h1 id="location-header">Resources near <%#=@search_location%>
+    </h1>
+
+    <h1>Here are your suggestions based on <%#=@search_resource%>
+    </h1>
+  </div>
+
+  <div class="back-btn">New Search 
+    <a href="/#hri"><i class="fa-solid fa-rotate-left"></i></a>
+  </div>
+
+  <div class="results-table">
+    <table> 
+      <thead>
+        <tr>
+          <th>Name</th> 
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      <%#@results.each do |result|%>-->
+<!--      <tr>
+      <td><%#=result.fetch("name")%></td>
+      <td id="td-rating"><%# if result.fetch("rating") == 0%>
+      <%#="We couldn't find any reviews"%>-->
+      <%#else%>
+      <%#=result.fetch("rating")%>
+      <%#end%>
+<!--      </td>-->
+      <%# end %>
+<!--      </tbody>
+      </table>
+      </table>
+    </table>
+  </div>
+</div>-->
 
 <div class="map-container">
   <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/search?key=<%=ENV.fetch("GOOGLE_API_KEY")%>
     &q=<%=@search_resource%>+<%=@search_resource%>,<%=@search_location%>">
   </iframe>
 </div>
+
+<div class="error-footer"><footer><%=@error_page_quotes%></footer></div>

@@ -55,6 +55,8 @@ get("/:search/:search_results") do
   api_key = ENV.fetch("GOOGLE_API_KEY")
   @search_location = params.fetch("search-locations")
   @search_resource = params.fetch("resource")
+  @results_downcase = @search_resource.downcase
+
   @lat = params.fetch("latitude")
   @lng = params.fetch("longitude")
 
@@ -66,60 +68,17 @@ get("/:search/:search_results") do
 
   @results = @parsed_data.fetch("results").map{ |result| result.slice("name", "opening_hours", "photos", "rating") }
 
-  # search_terms = "homeless", "homeless resources", "Homeless", "Homeless shelter", "Homeless shelters", "homeless shelters for women", "homeless shelters for women and children", "homeless shelters for men", "food pantries", "food pantry", "Food pantry"
-
-  # if @search_resource != search_terms[0]
-  #  return "Sorry, we're unable to find that resource."
+  @search_terms = ["homeless", "homeless resources", "homeless resource", "homeless shelters open now", "homeless shelter open now", "shelter", "homeless shelters open near me", "homeless shelter open near me" "homeless shelter", "homeless shelters", "food pantries", "food pantry", "food resources", "human services", "housing assistance", "homeless shelters open 24 hours"]
+quotes = ["You are never too old to set another goal or to dream a new dream. — Malala Yousafzai", "Be the reason someone smiles. Be the reason someone feels loved and believes in the goodness in people.
+- Roy T. Bennett", "Be a positive energy trampoline – absorb what you need and rebound more back. — Dave Carolan", "Believe in yourself. You are braver than you think, more talented than you know, and capable of more than you imagine.
+Roy T. Bennett" ]
+@error_page_quotes = quotes.sample
+  # if @search_terms.include?(@results_downcase)
+  #  erb :results
   # else
-  #   @results
+  #   "Sorry, we're unable to find that resource."
   # end
-
-  # search_terms = ["shopping", "flowers", "movies", "food"].each do |restrict|
-  #   if @search_resource == search_terms
-  #     return "Sorry, we're unable to find that resource."
-  #    else
-  #     return @results
-  #    end
-  # end 
-
-
-  #   <%if @search_resource != "homeless"%>
-# <%"Sorry, we're unable to find that resource."%>
-# <%else%>
-# <%=@search_resource%>
-# <%end%>
-
   erb(:results , {:layout => false })
 end
 
-# get("/additional_resources") do
-
-# end
-
-
-# api_key = ENV.fetch("GOOGLE_API_KEY")
-#   api_url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJrTLr-GyuEmsRBfy61i59si0&fields=address_components&key=#{api_key}"
-
-
-#   raw_data = HTTP.get(api_url)
-#   raw_data_string = raw_data.to_s
-#   parsed_data = JSON.parse(raw_data_string)
-#   @keys = parsed_data.fetch("result")
-
-
-# api_url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJrTLr-GyuEmsRBfy61i59si0&fields=address_components&key=#{api_key}"
-
-
-  # raw_data = HTTP.get(api_url)
-  # raw_data_string = raw_data.to_s
-  # parsed_data = JSON.parse(raw_data_string)
-  # @keys = parsed_data.fetch("result")
-
-
-# @keys = parsed_data.fetch("candidates")
-
-# user_location = "Chicago"
-
-  # api_url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry&input=Chicago&inputtype=textquery&key=#{api_key}"
-  # api_url = "https://places.googleapis.com/v1/places/places:searchText?fields=addressComponents&key=#{api_key}
   

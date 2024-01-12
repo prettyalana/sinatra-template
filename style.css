@@ -228,14 +228,15 @@ box-shadow: 0 0 10px white;
   text-decoration: none;
 }
 
-@media (max-width: 280px) {
+@media (max-width: 700px) {
   footer {
     /* width: 100%; */
     width: 100%;
-    font-size: x-small;
+    /* font-size: x-small;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
 
   }
 }
