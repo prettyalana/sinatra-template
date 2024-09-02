@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fredericka+the+Great&family=Italiana&family=Just+Another+Hand&family=Syncopate&family=Thasadith&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fredericka+the+Great&family=Italiana&family=Just+Another+Hand&family=Syncopate&family=Thasadith&display=swap");
 
 * {
-  font-family: 'Zen Maru Gothic', sans-serif; 
+  font-family: "Zen Maru Gothic", sans-serif;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
 }
 
 html {
@@ -27,11 +26,10 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 430px){
+@media (max-width: 430px) {
   body {
     width: 100%;
   }
-
 }
 
 .main-content {
@@ -46,7 +44,6 @@ body {
 }
 
 .nav-bar {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   padding: 16px;
@@ -54,7 +51,6 @@ body {
 
 .logo {
   gap: 5px;
-  /* border: 1px solid hotpink; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,15 +59,12 @@ body {
 #logo-img {
   height: 2.5rem;
   width: 2.5rem;
-  /* border: 1px solid rgb(57, 5, 246); */
 }
 
 .icons {
   display: flex;
   align-items: center;
-  /* gap: 10px; */
   gap: 1rem;
-  /* border: 1px solid blue; */
 }
 
 a:visited {
@@ -79,7 +72,6 @@ a:visited {
 }
 
 .main-title {
-  /* border: 1px solid black; */
   text-align: center;
 }
 
@@ -89,25 +81,15 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 5px solid blue; */
 }
 
-/* .static-quote {
-  border: 1px solid red;
-} */
-
 .random-quotes {
-  margin-top: .625rem;
-  margin-bottom: .625rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 
 .html-form {
   margin-top: 80px;
-  /* width: 100%; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* border: 5px solid blue; */
 }
 
 form {
@@ -125,10 +107,6 @@ form {
   }
 }
 
-/* label {
-  padding: 16px;
-} */
-
 input {
   border: 1px solid pink;
   border-radius: 100px;
@@ -141,16 +119,15 @@ input {
   height: 45px;
   width: 70px;
   border-radius: 10px;
-  /* padding: 16px; */
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
 }
 
 button:hover {
-background: white;
-border: 1px solid pink;
-box-shadow: 0 0 10px white;
+  background: white;
+  border: 1px solid pink;
+  box-shadow: 0 0 10px white;
 }
 
 .card-links {
@@ -165,18 +142,15 @@ box-shadow: 0 0 10px white;
 }
 
 .card-header {
-  /* border: 2px solid green; */
   text-align: center;
-  /* margin-top: 50px; */
   margin-bottom: 50px;
- }
+}
 
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  /* border: 2px solid red; */
   margin-right: 20px;
   margin-left: 5px;
 }
@@ -189,25 +163,20 @@ box-shadow: 0 0 10px white;
 
 .image:hover {
   border-radius: 20px;
-  box-shadow: 0 0 30px 0 pink,
-0 0 30px 0 pink,
-0 0 30px 0 pink;
+  box-shadow: 0 0 30px 0 pink, 0 0 30px 0 pink, 0 0 30px 0 pink;
 }
 
 @media (max-width: 1025px) {
-
   .card-container {
     gap: 50px;
   }
 }
 
 @media (max-width: 1000px) {
-
   .card-container {
     gap: 40px;
   }
 }
-  
 
 .google-maps {
   background: pink;
@@ -230,32 +199,21 @@ box-shadow: 0 0 10px white;
 
 @media (max-width: 700px) {
   footer {
-    /* width: 100%; */
     width: 100%;
-    /* font-size: x-small;
-    display: flex;
-    flex-direction: column;
-    align-items: center; */
     text-align: center;
-
   }
 }
 
-/* #location-form {
-  display: flex;
-} */
-
 #up {
   position: fixed;
-     bottom: 10px;
-     right: 10px;
-     z-index: 100;
-     border: 1px solid pink;
-     background: white;
-     padding: 16px 18px;
-     border-radius: 4px;
-     text-decoration: none;
-     /* box-shadow: 0 0 10px 5px white; */
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  border: 1px solid pink;
+  background: white;
+  padding: 16px 18px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 #up:hover {

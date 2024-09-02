@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.1"
+ruby "3.3.1"
 
 gem "sinatra"
 gem "sinatra-contrib"
@@ -14,6 +14,9 @@ gem "puma", "~> 5.0"
 
 # use active record
 gem "sinatra-activerecord"
+
+# store environment variables
+gem 'dotenv', groups: [:development, :test]
 
 group :development do
   gem "better_errors"
