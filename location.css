@@ -1,42 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  /* border: 5px solid red; */
 }
-
-
 
 body {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    margin-right: 0;
-    overflow-x: hidden;
-  font-family: 'Zen Maru Gothic', sans-serif; 
-  /* background: url("https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-repeat: no-repeat; */
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: hidden;
+  font-family: "Zen Maru Gothic", sans-serif;
   background: mintcream;
 }
-
-/* .nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.home-button {
-  padding: 8px;
-}
-
-.menu {
-  padding: 8px;
-} */
 
 a {
   text-decoration: none;
@@ -46,13 +27,9 @@ a:visited {
   color: transparent;
 }
 
-.main-content{
+.main-content {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
-  /* padding-top: 10rem;
-  padding-bottom: 10rem; */
   background: white;
   border: 5px solid powderblue;
   width: 80%;
@@ -74,26 +51,15 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 50px;
-  margin-bottom: 80px; */
-  /* gap: 20px; */
 }
 
 .main-header {
   text-align: center;
-  /* color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black; */
   margin-bottom: 20px;
 }
 
 .html-form {
   margin-top: 80px;
-  /* width: 100%; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* border: 5px solid blue; */
 }
 
 form {
@@ -102,12 +68,6 @@ form {
   align-items: center;
   gap: 8px;
 }
-
-/* label {
-  padding: 16px;
-  -webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: white;
-} */
 
 input {
   border: 1px solid powderblue;
@@ -121,16 +81,15 @@ button {
   height: 45px;
   width: 70px;
   border-radius: 10px;
-  /* padding: 16px; */
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
 }
 
 button:hover {
-background: powderblue;
-border: 1px solid white;
-box-shadow: 0 0 10px powderblue;
+  background: powderblue;
+  border: 1px solid white;
+  box-shadow: 0 0 10px powderblue;
 }
 
 @media (max-width: 600px) {
@@ -143,9 +102,6 @@ box-shadow: 0 0 10px powderblue;
 }
 
 .back-btn {
-  /* display: flex;
-  justify-content: center; */
-  /* margin-top: 8px; */
   margin-bottom: 16px;
   padding: 8px;
   text-align: center;
