@@ -6,7 +6,6 @@ require "geocoder"
 require "google_places"
 require "cgi"
 require "sinatra/cookies"
-require 'dotenv/load'
 
 # erb{:layout => false } allows you to change the layout of one or more of your erb files
 # Remember, when fetching params you're fetching the name of the dynamic route ex
