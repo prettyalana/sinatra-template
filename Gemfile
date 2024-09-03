@@ -18,7 +18,8 @@ gem 'puma', '~> 6.4', '>= 6.4.2'
 gem "sinatra-activerecord"
 
 # store environment variables
-gem 'dotenv', groups: [:development, :test]
+# Uncomment while working in development 
+# gem 'dotenv', groups: [:development, :test]
 
 group :development do
   gem "better_errors"

@@ -52,7 +52,6 @@ GEM
     debug_inspector (1.2.0)
     diff-lcs (1.5.1)
     domain_name (0.6.20240107)
-    dotenv (3.1.2)
     draft_matchers (0.0.2)
       capybara
       color_namer
@@ -255,7 +254,6 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   capybara
-  dotenv
   draft_matchers
   geocoder
   google_places
