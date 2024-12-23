@@ -12,7 +12,7 @@ The homeless resource index was designed for those experiencing homelessness or 
 ## Installation
 
 1. Clone the repository:
-* ```git clone https://github.com/yourusername/Muse.git)```
+* ```git clone https://github.com/yourusername/homeless-resource-index.git```
   
 2. Install dependencies:
 * ```bundle install```
