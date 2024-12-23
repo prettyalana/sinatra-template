@@ -25,8 +25,11 @@ The homeless resource index was designed for those experiencing homelessness or 
 
 ## How It Works
 
+## Get Started
 To get started, locate the Search resources near you search bar and input your city or zip code. 
 - Navigate to the Search resources near you search bar and input the resources you're looking for i.e. Shelters, Food pantries, etc.
 - You will then be presented with a list of resources and a map displaying their locations.
-To search for a new location, click the New Search button or the X icon and repeat the steps above.
+
+## Search For a New Location
+- To search for a new location, click the New Search button or the X icon and repeat the steps above.
 
